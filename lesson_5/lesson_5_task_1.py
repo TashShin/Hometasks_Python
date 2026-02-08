@@ -8,7 +8,7 @@ driver.get("http://uitestingplayground.com/classattr")
 wait = WebDriverWait(driver, 5)
 
 
-target_button = driver.find_element(By.CSS_SELECTOR, ".btn-primary").click
+target_button = driver.find_element(By.CSS_SELECTOR, ".btn-primary").click()
 print("Кнопка нажата")
 
 sleep(5)

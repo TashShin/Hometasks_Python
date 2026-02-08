@@ -11,7 +11,7 @@ password_input = driver.find_element(By. CSS_SELECTOR, "input#password")
 password_input.send_keys("SuperSecretPassword!")
 target_button = driver.find_element(By.CLASS_NAME, "radius").click()
 
-flash_element = driver.find_element(By.CSS_SELECTOR, "div#flash.flash.success")
+flash_element = driver.find_element(By.CSS_SELECTOR, "div.flash.success")
 print(flash_element.text)
 
 sleep(5)

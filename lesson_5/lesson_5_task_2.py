@@ -8,7 +8,7 @@ driver.get("http://uitestingplayground.com/dynamicid")
 wait = WebDriverWait(driver, 5)
 
 
-target_button = driver.find_element(By.CLASS_NAME, "btn-primary").click
+target_button = driver.find_element(By.CLASS_NAME, "btn-primary").click()
 print("Кнопка нажата")
 
 sleep(5)
