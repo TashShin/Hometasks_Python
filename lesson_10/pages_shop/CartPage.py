@@ -4,7 +4,7 @@ import allure
 
 
 class CartPage:
-    def __init__(self, driver: WebDriverWait):
+    def __init__(self, driver: WebDriverWait) -> None:
         """
         Конструктор класса CartPage.
         :param driver: WebDriver - объект драйвера Selenium.

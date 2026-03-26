@@ -4,7 +4,7 @@ import allure
 
 
 class LoginPage:
-    def __init__(self, driver: WebDriverWait):
+    def __init__(self, driver: WebDriverWait) -> None:
         """
         Конструктор класса CartPage.
         :param driver: WebDriver - объект драйвера Selenium.
@@ -12,7 +12,7 @@ class LoginPage:
         self.driver = driver
 
     @allure.step("Ввод данных пользователя {username} и {password}, нажатие кнопки Login")
-    def login(self, username: str, password: str):
+    def login(self, username: str, password: str) -> None:
         """
         Ввод имени пользователя и пароля, нажатие кнопки Login.
         :param user-name: str - имя пользователяю

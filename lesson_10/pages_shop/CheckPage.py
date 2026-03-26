@@ -5,7 +5,7 @@ import allure
 
 
 class CheckPage:
-    def __init__(self, driver: WebDriverWait):
+    def __init__(self, driver: WebDriverWait) -> None:
         """
         Конструктор класса CartPage.
         :param driver: WebDriver - объект драйвера Selenium.
@@ -13,7 +13,7 @@ class CheckPage:
         self.driver = driver
 
     @allure.step("Заполнение формы оформления заказа: Имя {first_name}, Фамилия {last_name}, Индекс {zip_code}")
-    def fill_form(self, first_name, last_name, zip_code):
+    def fill_form(self, first_name, last_name, zip_code) -> None:
         """
         Заполнение формы оформления заказа: Имя, Фамилия, Индекс.
         :param first_name: str - имя покупателя.
