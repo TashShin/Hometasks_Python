@@ -6,7 +6,7 @@ import allure
 
 class CalcPage:
 
-    def __init__(self, driver: WebDriverWait):
+    def __init__(self, driver: WebDriverWait) -> None:
         """
         Конструктор класса CalcPage.
         :param driver: WebDriver - объект драйвера Selenium.
